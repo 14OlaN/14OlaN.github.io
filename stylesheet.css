@@ -61,6 +61,7 @@ p {
 	overflow: visible;
  	position: fixed; 
  	width: 100%;
+	line-height: 2em;
  	padding-left: 5%;
  	/* each page: add text color */
  }
