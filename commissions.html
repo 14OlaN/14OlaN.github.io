@@ -43,9 +43,6 @@
 		<div class="section-title">
 			<p style="color:#63a065;">~ Commissions ~</p>
 		</div>
-		
-	<!-- NEW SLIDESHOW 
-			CODE SRC https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
 	<!-- CONTENT #1 WALLPAPER CATALOGUE -->
 		<div class="slideshow-container">
@@ -270,29 +267,41 @@
 
 			let slideIndex = [1,1,1,1,1,1,1]; //as many "1" as there are slideshows
 			let slideId = ["mySlides", "mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"] 
+			showSlides(slideIndex6, 6);
 			//add slideshows
-			showSlides(1, 0); //add slideshows as needed
-			showSlides(1, 1);
-			showSlides(1, 2);
-			showSlides(1, 3);
-			showSlides(1, 4);
-			showSlides(1, 5);
-			showSlides(1, 6);
+			//showSlides(1, 0); //add slideshows as needed
+			//showSlides(1, 1);
+			//showSlides(1, 2);
+			//showSlides(1, 3);
+			//showSlides(1, 4);
+			//showSlides(1, 5);
+			//showSlides(1, 6);
 
 			function plusSlides(n, no) {
-			  showSlides(slideIndex[no] += n, no);
+			  showSlides(slideIndex6 += n, no);
 			}
 
 			function showSlides(n, no) {
-			  let i;
-			  let x = document.getElementsByClassName(slideId[no]);
-			  if (n > x.length) {slideIndex[no] = 1}    
-			  if (n < 1) {slideIndex[no] = x.length}
-			  for (i = 0; i < x.length; i++) {
-			     x[i].style.display = "none";  
-			  }
-			  x[slideIndex[no]-1].style.display = "block";  
+			    let i;
+			    const slides = document.getElementsByClassName(`mySlides${no}`);
+			    if (n > slides.length) { slideIndex6 = 1 }
+			    if (n < 1) { slideIndex6 = slides.length }
+			    for (i = 0; i < slides.length; i++) {
+			        slides[i].style.display = "none";
+			    }
+			    slides[slideIndex6 - 1].style.display = "block";
 			}
+
+			//function showSlides(n, no) {
+			//  let i;
+			//  let x = document.getElementsByClassName(slideId[no]);
+			//  if (n > x.length) {slideIndex[no] = 1}    
+			//  if (n < 1) {slideIndex[no] = x.length}
+			 // for (i = 0; i < x.length; i++) {
+			   //  x[i].style.display = "none";  
+			 // }
+			  //x[slideIndex[no]-1].style.display = "block";  
+			//}
 		</script>
 
 	</div>
