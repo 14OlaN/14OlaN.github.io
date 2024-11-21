@@ -95,6 +95,8 @@ p {
 	margin: auto;
 	position: relative;
 	padding: 8%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 
 	/* each page: add outline color */
 }
@@ -104,6 +106,7 @@ p {
 	margin: auto;
 	position: relative;
 	padding: 8%;
+	padding-top: 5%;
 	text-align: center;
 	font-style: italic;
 }
