@@ -44,8 +44,8 @@ a {
 }
 p {
 	margin: 0%;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 13%;
+	padding-right: 13%;
 }
 
 #welcome:hover {background-color: #f3ba70;}
@@ -94,16 +94,16 @@ p {
 	width: 85%;
 	margin: auto;
 	position: relative;
-	padding: 5%;
+	padding: 8%;
 
 	/* each page: add outline color */
 }
 .footer-container {
 	background-color: #ffffff;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	position: relative;
-	padding: 5%;
+	padding: 8%;
 	text-align: center;
 	font-style: italic;
 }
@@ -125,7 +125,7 @@ p {
 	max-width: 100%;
 	height: auto;
 	position: relative;
-  margin: auto;
+  	margin: auto;
 }
 
 img {
@@ -133,9 +133,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	max-height: 98vh;
-  object-fit: contain;
-
-
+  	object-fit: contain;
 }
 
 /* ------------------------- EXPERIENCE - RESUME */
