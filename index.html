@@ -40,6 +40,52 @@
 <body>
 	<!-- WELCOME -->
 	<div class="content-container">
+		<div class="section-title">
+			<p style="color:#f3ba70;">~ Welcome ~</p>
+		</div>
+
+	<!-- MAJA -->
+		<img src="photography/Maja_1.jpg" style="width:100%, padding-bottom:10px">
+		
+	<!-- BOOKS - AUTOMATIC SLIDESHOW -->
+		<div class="slideshow-container">
+			<div class="mySlides">
+				<img src="publications/sophan_0.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+				<img src="publications/manifesto_0_2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+				<img src="publications/evidence_0.jpg" style="width:100%">
+			</div>
+		</div>
+
+	<!-- BUMPER STICKER - AUTOMATIC SLIDESHOW -->
+		<div class="slideshow-container">
+			<div class="mySlides1">
+			    <img src="graphic/bumper sticker-06.png" style="width:100%; max-height: 90vh;">
+			</div>
+			<div class="mySlides1">
+			    <img src="graphic/bumper sticker-05.png" style="width:100%; max-height: 90vh;">
+			</div>
+			<div class="mySlides1">
+			    <img src="graphic/bumper sticker-04.png" style="width:100%; max-height: 90vh;">
+			</div>
+		</div>
+	<!-- LSA -->
+		<video style="width:100%" controls autoplay muted loop loading="eager"> <source src="commissions/LSA_website_home.mp4" type="video/mp4"/></video>
+	
+	<!-- MOUSE MENU -->
+		<img src="graphic/mousemoment_0.JPG" style="width:100%; max-height: 90vh;">
+	
+	<!-- SHOES -->
+		<img src="photography/shoes_1.jpg" style="width:100%">
+	
+	<!-- ICE TWISTER -->	
+		<video style="width:100%;" autoplay muted controls><source src="graphic/knot.mp4" type="video/mp4">/</video>
+	</div>
+
+	<div class="content-container" style="margin-top: 40px;">
 		<!-- TITLE -->
 		<div class="section-title">
 			<p style="color:#f3ba70;">~ Welcome ~</p>
@@ -91,7 +137,40 @@
 	</div>
 
 	<div class="footer-container">
-		<p>Last updated on 7 March 2024.</p>
+		<p>Last updated on 8 January 2025.</p>
 	</div>
+
+	<script>
+	    let slideIndex = [1, 1]; // Index for each slideshow
+	    let slideId = ["mySlides", "mySlides1"]; // Class names for each slideshow
+
+	    // Initialize slideshows
+	    for (let i = 0; i < slideId.length; i++) {
+	        showSlides(slideIndex[i], i);
+	    }
+
+	    // Function to show the slides
+	    function showSlides(n, no) {
+	        let i;
+	        let x = document.getElementsByClassName(slideId[no]);
+	        if (n > x.length) { slideIndex[no] = 1; }
+	        if (n < 1) { slideIndex[no] = x.length; }
+	        for (i = 0; i < x.length; i++) {
+	            x[i].style.display = "none";
+	        }
+	        x[slideIndex[no] - 1].style.display = "block";
+	    }
+
+	    // Function for automatic cycling
+	    function carousel() {
+	        for (let i = 0; i < slideId.length; i++) {
+	            slideIndex[i]++;
+	            showSlides(slideIndex[i], i);
+	        }
+	        setTimeout(carousel, 2000); // Change image every 2 seconds
+	    }
+
+	    carousel(); // Start the slideshow
+	</script>
 </body>
 </html>
