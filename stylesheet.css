@@ -49,9 +49,10 @@ p {
 }
 
 #welcome:hover {background-color: #f3ba70;}
-#graphic_works:hover {background-color: #3d91c8;}
+#graphic_work:hover {background-color: #3d91c8;}
 #commissions:hover {background-color: #63a065;}
 #publications:hover {background-color: #e575ae;}
+#personal_work:hover {background-color: #e575ae;}
 #about:hover {background-color: #46769a;}
 #photography:hover {background-color: #ac9de4;}
 
