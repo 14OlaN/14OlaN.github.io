@@ -21,6 +21,10 @@ body {
 }
 
 */
+html {
+  scroll-behavior: smooth;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -146,6 +150,18 @@ img {
 	height: auto;
 	max-height: 98vh;
   	object-fit: contain;
+}
+
+.iframe-wrapper {
+	width: 100%;
+	max-width: 100%;
+	height: 80vh;
+	max-height: 80vh;
+  object-fit: contain;
+}
+.figma-frame {
+	width: 100%;
+	height: 100%;
 }
 
 /* ------------------------- EXPERIENCE - RESUME */
