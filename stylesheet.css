@@ -48,6 +48,7 @@ p {
 	padding-right: 13%;
 }
 
+/*
 #welcome:hover {background-color: #f3ba70;}
 #graphic_work:hover {background-color: #3d91c8;}
 #commissions:hover {background-color: #63a065;}
@@ -55,7 +56,13 @@ p {
 #personal_work:hover {background-color: #e575ae;}
 #about:hover {background-color: #46769a;}
 #photography:hover {background-color: #ac9de4;}
+*/
 
+#welcome:hover {background-color: #3d91c8;}
+#graphic_work:hover {background-color: #3d91c8;}
+#commissions:hover {background-color: #3d91c8;}
+#personal_work:hover {background-color: #3d91c8;}
+#photography:hover {background-color: #3d91c8;}
 
 .navbar-container a {
 	font-family: Georgia;
